@@ -50,7 +50,7 @@ button a{
 .tariff-header, #additionals-header{
     background: #cccccc;
     padding: 10px 20px;
-    font-family: "wf_SegoeUINormal";
+    font-weight: normal;
     font-size: 24px;
     text-align: center;
 }
@@ -82,7 +82,7 @@ td{
 }
 .tariff-footer .price, #additionals-body .price{
     color: #30b280;
-    font-family: "wf_SegoeUINormal";
+    font-weight: normal;
     font-size: 24px;
     vertical-align: middle;
 }
