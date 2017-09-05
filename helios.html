@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>НТНА.Гелиос - Возможности</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="helios.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="header.js"></script>
+    <script src="dropdown.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <div id="top-header">
+        <div id="nav-toggle"><hr><hr><hr></div>
+        НТНА.<span>Гелиос</span>
+    </div>
+    <div id="lower-header">
+        <a href="#abilities">
+            <div>Возможности</div>
+            <hr>
+        </a>
+        <a href="#pricing">
+            <div>Цены</div>
+            <hr>
+        </a>
+        <a href="#support">
+            <div>Поддержка</div>
+            <hr>
+        </a>
+        <a href="#beta">
+            <div>Начать бесплатно</div>
+            <hr>
+        </a>
+    </div>
+</header>
+<div id="content" class="hidden-until-ready">
+    <section class="tab-content" id="abilities">
+        <h1>Возможности</h1>
+        <div id="centered">
+            <a href="#beta" class="navigation-button">
+                <button id="beta-button">
+                    Начните прямо сейчас <br>
+                    <span>Бесплатно в течение 30 дней</span>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="tab-content" id="pricing">
+        <div id="tariffs">
+            <div class="tariff-block econom">
+                <div class="tariff-header">Эконом</div>
+                <div class="tariff-body">
+                    <div class="true">Годовой оборот<br/>
+                        <span>До 300 000</span>
+                    </div>
+                    <div class="true">&#10004; Основные функции<br/>
+                        <span>Складской учет, работа с клиентами, документооборот, заказ-наряды, статистика и аналитика</span>
+                    </div>
+                    <div class="false">&#10008; Многопользовательский доступ<br/>
+                            <span>Нет</span>
+                    </div>
+                    <div class="false">&#10008; Сотрудники<br/>
+                            <span>Учет рабочего времени, расчет зарплаты</span>
+                    </div>
+                    <div class="false">&#10008; Дополнительные функции<br/>
+                        <span>Инвентаризация, работа с юридическими лицами</span>
+                    </div>
+                    <div class="false">&#10008; Работа с нескольких компьютеров</div>
+                </div>
+                <table class="tariff-footer">
+                    <tr>
+                        <td class="l"><span class="price">1&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;месяц</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                    <tr>
+                        <td class="l"><span class="price">12&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;год</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tariff-block standard">
+                <div class="tariff-header">Стандарт</div>
+                <div class="tariff-body">
+                    <div class="true">Годовой оборот<br/>
+                        <span>До 2 000 000</span>
+                    </div>
+                    <div class="true">&#10004; Основные функции<br/>
+                        <span>Складской учет, работа с клиентами, документооборот, заказ-наряды, статистика и аналитика</span>
+                    </div>
+                    <div class="true">&#10004; Многопользовательский доступ<br/>
+                            <span>До трех пользователей</span>
+                    </div>
+                    <div class="true">&#10004; Сотрудники<br/>
+                            <span>Учет рабочего времени, расчет зарплаты</span>
+                    </div>
+                    <div class="true">&#10004; Дополнительные функции<br/>
+                        <span>Инвентаризация, работа с юридическими лицами</span>
+                    </div>
+                    <div class="false">&#10008; Работа с нескольких компьютеров</div>
+                </div>
+                <table class="tariff-footer">
+                    <tr>
+                        <td class="l"><span class="price">1&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;месяц</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                    <tr>
+                        <td class="l"><span class="price">12&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;год</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tariff-block premium">
+                <div class="tariff-header">Премиум</div>
+                <div class="tariff-body">
+                    <div class="true">Годовой оборот<br/>
+                        <span>Неограничен</span>
+                    </div>
+                    <div class="true">&#10004; Основные функции<br/>
+                        <span>Складской учет, работа с клиентами, документооборот, заказ-наряды, статистика и аналитика</span>
+                    </div>
+                    <div class="true">&#10004; Многопользовательский доступ<br/>
+                            <span>Не ограничен</span>
+                    </div>
+                    <div class="true">&#10004; Сотрудники<br/>
+                            <span>Учет рабочего времени, расчет зарплаты</span>
+                    </div>
+                    <div class="true">&#10004; Дополнительные функции<br/>
+                        <span>Инвентаризация, работа с юридическими лицами</span>
+                    </div>
+                    <div class="true">&#10004; Работа с нескольких компьютеров</div>
+                </div>
+                <table class="tariff-footer">
+                    <tr>
+                        <td class="l"><span class="price">1&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;месяц</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                    <tr>
+                        <td class="l"><span class="price">12&nbsp;000&nbsp;&#8381;</span></td>
+                        <td class="l"><span class="period">в&nbsp;год</span></td>
+                        <td class="r"><a href=""><button>Купить</button></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="additionals">
+            <div id="additionals-header">Дополнительные опции</div>
+            <table id="additionals-body">
+                <tr>
+                    <td>Дополнительные 100&nbsp;000 к обороту<br/><span>Если годовой оборот превышен</span></td>
+                    <td class="price">1&nbsp;000 &#8381;</td>
+                    <td class="r"><a href=""><button>Купить</button></a></td>
+                </tr>
+                <tr>
+                    <td>Установка</td>
+                    <td class="price">20&nbsp;000 &#8381;</td>
+                    <td class="r"><a href=""><button>Купить</button></a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="tab-content" id="support">
+        <h1>Поддержка</h1>
+        <div class="dropdown-block">
+            <div class="dropdown-header">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-h">Заголовок</div>
+            </div>
+            <div class="dropdown-content">Текст</div>
+        </div>
+        <div class="dropdown-block">
+            <div class="dropdown-header">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-h">Заголовок</div>
+            </div>
+            <div class="dropdown-content">Текст</div>
+        </div>
+    </section>
+    <section class="tab-content" id="beta">
+            <h1>Начните прямо сейчас</h1>
+        </section>
+</div>
+<div id="up-button">
+    <a href="">
+        <div id="up-arrow"></div>
+    </a>
+</div>
+<footer class="hidden-until-ready"><a href="mailto:contact@ntna.ru"><div>contact@ntna.ru</div></a>
+</footer>
+</div>
+</body>
+</html>

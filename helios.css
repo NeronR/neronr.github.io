@@ -1,0 +1,142 @@
+#centered{
+    text-align: center;
+}
+button{
+    text-decoration: none;
+    font: inherit;
+    font-size: 20px;
+    color: white;
+    padding: 0.14vh 1vw 0.7vh 1vw;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 0.84vh 0.42vh -0.7vh #333333;
+    transition: .3s ease;
+}
+button a{
+    text-decoration: inherit;
+    color: inherit;
+}
+/*ABILITIES*/
+#beta-button {
+    background: #ff342e;
+}
+#beta-button:hover{
+    background: #ff7773;
+}
+/*PRICING*/
+#pricing{
+    margin: auto;
+}
+#tariffs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.tariff-block{
+    min-width: 25%;
+    max-width: 300px;
+}
+.tariff-block, #additionals{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 10px 10px;
+    border: 3px solid #cccccc;
+    background: white;
+}
+.premium{
+    border-color: #30b280;
+}
+.tariff-header, #additionals-header{
+    background: #cccccc;
+    padding: 10px 20px;
+    font-family: "wf_SegoeUINormal";
+    font-size: 24px;
+    text-align: center;
+}
+.premium .tariff-header{
+    background: #30b280;
+}
+.tariff-body div{
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+}
+.tariff-body .false{
+    color: #777777;
+}
+.tariff-body span, #additionals-body span{
+    font-size: 15px;
+}
+.tariff-footer{
+    font-size: 14px;
+    width: 100%;
+}
+td{
+    font: inherit;
+    text-align: left;
+    vertical-align: bottom;
+}
+.tariff-footer .r, #additionals-body .r{
+    text-align: right;
+    vertical-align: middle;
+}
+.tariff-footer .price, #additionals-body .price{
+    color: #30b280;
+    font-family: "wf_SegoeUINormal";
+    font-size: 24px;
+    vertical-align: middle;
+}
+.tariff-footer .period{
+    color: #777777;
+}
+.tariff-footer sup{
+    background: #ff342e;
+    padding: 1px;
+    margin: 200px 0px 0px 0px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.tariff-footer button, #additionals-body button{
+    background: #30b280;
+    margin: 3px 10px;
+}
+.tariff-footer button:hover, #additionals-body button:hover{
+    background: #62d9ac;
+}
+#additionals-body{
+    width: 100%;
+}
+/*SUPPORT*/
+.dropdown-block{
+    border: 1px solid #30b280;
+    margin-bottom: 10px;
+}
+.dropdown-header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background: #cccccc;
+}
+.dropdown-arrow{
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-top-color: black;
+    transition: .3s ease;
+    margin: 10px 10px 0px 10px;
+}
+.dropdown-arrow:hover{
+    border-top-color: #777777;
+}
+.dropdown-arrow-rotate{
+    transform: rotate(-90deg);
+    margin: 10px;    
+}
+.dropdown-h{
+    height: min-content;
+    font-size: 20px;
+}
+.dropdown-content{
+    display: none;
+    padding: 10px;
+}

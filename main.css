@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'wf_SegoeUINormal';
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot');
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot?#iefix') format('embedded-opentype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.woff') format('woff'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.ttf') format('truetype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'wf_SegoeUILight';
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'),
+           url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    margin: 0;
+    background: #f8f8f8;
+}
+.hidden-until-ready{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font: normal 14pt "wf_SegoeUINormal";
+}
+header, footer{
+    flex: 0 1 auto;
+    box-shadow: 0px 0px 6vh 0px #333333;
+}
+#nav-toggle{
+    display: none;
+}
+#nav-toggle hr{
+    border: 0px;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 3px;
+    background: #30b280;
+}
+#top-header{
+    font-size: 40pt;
+    font-family: "wf_SegoeUINormal";
+    padding-left: 1vw;
+}
+#top-header span{
+    color: #30b280;
+}
+#lower-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background: #30b280;
+    font-family: "wf_SegoeUILight";
+}
+#lower-header a{
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    min-width: 13%;
+    transition: background .5s ease;
+}
+#lower-header a:hover{
+    background: #62d9ac;
+}
+#lower-header a:active{
+    background: #82d9b8;
+}
+#lower-header a div{
+    margin: 0.75vw;
+}
+#lower-header a hr{
+    border: 0px;
+    height: 0.7vh;
+    margin-bottom:  0.7vh;
+    transition: background .3s ease;
+}
+#lower-header .active hr, #lower-header a:active hr{
+    background: white;
+}
+#up-button{
+    position: fixed;
+    bottom: 10vh;
+    right: 2vw;
+}
+#up-arrow{
+    border: 2vw solid transparent;
+    border-bottom-color: #999999;
+    transition: .3s ease;
+}
+#up-arrow:hover{
+    border-bottom-color: #666666;
+}
+#content{
+    flex: 1 1 auto;
+    padding: 7vh 8vw 7vh 4vw;
+    height: 100%;
+}
+footer{
+    background: #30b280;
+    color: white;
+}
+footer div{
+    margin: 0.75vw;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+@media all and (max-width: 500px) {
+    td{
+        display: inline-block;
+    }
+    #nav-toggle {
+        display: inline-block;
+    }
+    #top-header{
+        border-bottom: 1vh solid #30b280;
+        font-size: 20pt;
+    }
+    #lower-header{
+        display: none;
+        flex-flow: column nowrap;
+    }
+    #content{
+        word-wrap: break-word;
+    }
+}
