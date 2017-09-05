@@ -167,6 +167,10 @@ footer a:hover{
     #lower-header{
         display: none;
         flex-flow: column nowrap;
+        border-bottom: 1vh solid #30b280;
+    }
+    #lower-header a hr{
+        margin: 0px;
     }
     #content{
         word-wrap: break-word;

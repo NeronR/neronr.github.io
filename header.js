@@ -15,6 +15,11 @@ $(document).ready(function ()
         $("#lower-header a:first").addClass("active");
     }
     $(".hidden-until-ready").show();
+    /*RESIZE*/
+    $(window).resize(function() {
+        if($(window).width() > 500)
+            $("#lower-header").show();
+    });
     /*CLICKS*/
     $("#lower-header a").click(function()
     {
