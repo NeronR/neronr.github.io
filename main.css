@@ -128,7 +128,7 @@ footer div{
     margin: 0.75vw;
 }
 footer a{
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
 }
 footer a:hover{
