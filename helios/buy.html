@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>НТНА.Гелиос - Возможности</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="./buy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="buy.js"></script>
+    <script src="../up-button.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <div id="top-header">
+        <a href="../helios.html">НТНА.<span>Гелиос</span></a>
+    </div>
+</header>
+<div id="content" class="hidden-until-ready">
+    <section class="tab-content" id="econom-month" href="https://ya.ru">
+        <h1>Эконом подписка на месяц</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="econom-year" href="https://google.com">
+        <h1>Эконом подписка на год</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="standard-month">
+        <h1>Стандартная подписка на месяц</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="standard-year">
+        <h1>Стандартная подписка на год</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="premium-month">
+        <h1>Премиум подписка на месяц</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="premium-year">
+        <h1>Премиум подписка на год</h1>
+        <span class="price">12&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="turnover">
+        <h1>Дополнительные 100&nbsp;000 к обороту</h1>
+        <span class="price">1&nbsp;000&nbsp;&#8381;</span>
+    </section>
+    <section class="tab-content" id="setup">
+        <h1>Установка (выезд мастера)</h1>
+        <span class="price">1&nbsp;000&nbsp;&#8381;</span>
+        <p class="description">
+            Услуга доступна только в пределах Санкт-Петербурга
+        </p>
+    </section>
+    <section id="pay-methods">
+        <p>
+            <input type="radio" name="pay-type" value="card" checked> Оплата на сайте<br>
+            <input type="radio" name="pay-type" value="bank"> Безналичный расчет (юридическое лицо или ИП)
+        </p>    
+        <div class="method" id="card">
+            <a id=pay-link target="_blank">
+                <button id="pay-button">Оплатить</button>
+            </a>
+        </div>
+        <div class="method" id="bank">
+            Для выставления счета заполните форму
+            <form method="POST" action="http://formspree.io/sales@ntna.ru">
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="name" placeholder="Наименование организации (ИП)" rows="2" required></textarea>
+                <textarea name="name" placeholder="Примечание (не обязательно)" rows="3"></textarea>
+                <button type="submit" id="pay-button">Отправить заявку</button>
+                <textarea name="service" id="service-name"></textarea>
+            </form>
+            или свяжитесь с нами по адресу электронной почты 
+            <a href="mailto:sales@ntna.ru?subject=Запрос счета" target="_blank" class="email-address">sales@ntna.ru</a>
+        </div>
+    </section>
+</div>
+<div id="up-button">
+    <a href="">
+        <div id="up-arrow"></div>
+    </a>
+</div>
+<footer class="hidden-until-ready"><a href="mailto:contact@ntna.ru"><div>contact@ntna.ru</div></a>
+</footer>
+</div>
+</body>
+</html>
