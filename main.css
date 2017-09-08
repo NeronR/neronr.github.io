@@ -13,8 +13,9 @@
   font-weight: bold;
   src: local("Segoe UI Bold"), local('SegoeUI-Bold'), url('/fonts/segoe-ui-bold.woff') format('woff');
 }
-#centered{
+.centered{
     text-align: center;
+    margin: auto;
 }
 button{
     text-decoration: none;
