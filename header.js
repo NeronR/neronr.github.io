@@ -34,11 +34,6 @@ $(document).ready(function ()
         $('html, body').scrollTop(0);
         return false;
     });
-    $("#up-button").click(function()
-    {
-        $('html, body').scrollTop(0);  
-        return false;      
-    });
     $(".navigation-button").click(function()
     {
         var hash = $(this).attr("href");
