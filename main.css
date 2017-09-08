@@ -35,17 +35,24 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.email-address{
+    text-decoration: underline;
+    color: #0000ff;
+}
 html, body {
     margin: 0;
+    padding: 0;
     background: #f8f8f8;
+    height: 100%;
 }
 .hidden-until-ready{
     display: none;
 }
-.wrapper{
+#wrapper{
     display: flex;
     flex-direction: column;
     font: normal 14pt "Segoe UI";
+    min-height: 100%;
 }
 header, footer{
     flex: 0 1 auto;
