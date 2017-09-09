@@ -6,7 +6,7 @@ $(document).ready(function ()
     $("#pay-link").attr("href", $(hash).attr("href"));
     $(hash).show();
     $(".hidden-until-ready").show();
-    $("input[type=radio][name=pay-type").change(function(){
+    $("input[type=radio][name=pay-type]").change(function(){
         $("#pay-methods .method").stop(false, true).slideUp(300);
         $("#pay-methods #" + this.value).stop(false, true).slideDown(300);
         return false;

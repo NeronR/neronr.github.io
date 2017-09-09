@@ -2,7 +2,7 @@ $(document).ready(function ()
 {
     $(".tab-content").hide();
     var hash = $.trim( window.location.hash);
-    if (hash == "#abilities" || hash == "#pricing" || hash == "#support" || hash == "#beta")
+    if ($(hash).length)
     {
         $("#lower-header a").removeClass("active");
         $('#lower-header a[href$="'+hash+'"]').addClass("active");
@@ -21,23 +21,25 @@ $(document).ready(function ()
             $("#lower-header").show();
     });
     /*CLICKS*/
+    function showSection(hash){
+        $("#lower-header a").removeClass("active");
+        $('#lower-header a[href$="'+hash+'"]').addClass("active");
+        $(".tab-content").stop(false, true).slideUp(500);
+        $(hash).stop(false, true).slideDown(500);
+        document.location.hash = hash;
+        $('html, body').scrollTop(0);
+        return false;
+    }
     $("#lower-header a").click(function()
     {
-        if($(this).hasClass("active"))
-            return false;
-        $("#lower-header a").removeClass("active");
-        $(this).addClass("active");
-        var currentTab = $(this).attr("href");
-        $(".tab-content").stop(false, true).slideUp(500);
-        $(currentTab).stop(false, true).slideDown(500);
-        document.location.hash = currentTab;
-        $('html, body').scrollTop(0);
+        if($(this).hasClass("active") == false)
+            showSection($(this).attr("href"));
         return false;
     });
     $(".navigation-button").click(function()
     {
         var hash = $(this).attr("href");
-        $('#lower-header a[href$="'+hash+'"]').trigger('click');
+        showSection(hash);
         return false;
     });
     $("#nav-toggle").click(function()
