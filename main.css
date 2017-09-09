@@ -153,11 +153,15 @@ footer div{
     margin: 0.75vw;
 }
 footer a{
-    text-decoration: underline;
     color: inherit;
 }
-footer a:hover{
-    text-decoration: underline;
+footer .footer-email{
+    float: left;
+}
+footer .footer-column{
+    float: right;
+    display: flex;
+    flex-direction: column;
 }
 @media screen and (max-width: 500px) {
     td{
