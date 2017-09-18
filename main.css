@@ -131,6 +131,7 @@ header a{
     position: fixed;
     bottom: 10vh;
     right: 2vw;
+    z-index: -1;
 }
 #up-arrow{
     border: 2vw solid transparent;
@@ -184,5 +185,11 @@ footer .footer-column{
     }
     #content{
         word-wrap: break-word;
+    }
+}
+@media screen and (min-width: 1300px) {
+    #content{
+        width: 1000px;
+        margin: auto;
     }
 }
