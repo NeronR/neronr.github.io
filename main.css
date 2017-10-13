@@ -16,7 +16,7 @@
 @font-face {
     font-family: "Book Antiqua";
     font-weight: bold;
-    src: local("Book Antiqua Bold");
+    src: local("Book Antiqua Bold"), url('/fonts/book-antiqua-bold.ttf');
 }
 .centered{
     text-align: center;
