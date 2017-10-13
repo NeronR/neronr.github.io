@@ -106,7 +106,6 @@ header a{
 }
 #top-header #logo{
     font-family: "Book Antiqua";
-    font-weight: bold;
 }
 #top-header span:not(#logo){
     color: #30b280;
