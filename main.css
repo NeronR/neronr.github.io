@@ -13,6 +13,11 @@
   font-weight: bold;
   src: local("Segoe UI Bold"), local('SegoeUI-Bold'), url('/fonts/segoe-ui-bold.woff') format('woff');
 }
+@font-face {
+    font-family: "Book Antiqua";
+    font-weight: bold;
+    src: local("Book Antiqua Bold");
+}
 .centered{
     text-align: center;
     margin: auto;
@@ -99,7 +104,11 @@ header a{
     font-weight: normal;
     padding-left: 1vw;
 }
-#top-header span{
+#top-header #logo{
+    font-family: "Book Antiqua";
+    font-weight: bold;
+}
+#top-header span:not(#logo){
     color: #30b280;
 }
 #lower-header{
